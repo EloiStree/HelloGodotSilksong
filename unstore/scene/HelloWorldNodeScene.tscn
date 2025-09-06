@@ -1,0 +1,94 @@
+[gd_scene load_steps=11 format=3 uid="uid://c1wg05hfofber"]
+
+[ext_resource type="Texture2D" uid="uid://svvhi5qkgyno" path="res://unstore/asset/2d/xbox_button/BA.PNG" id="1_pq0jg"]
+[ext_resource type="Texture2D" uid="uid://dqs5p4yosnfrw" path="res://unstore/asset/2d/xbox_button/AD.PNG" id="2_hofel"]
+[ext_resource type="Script" uid="uid://yh0ss874dt3b" path="res://unstore/script/random_try/udp__integer_client_pusher.gd" id="3_avd86"]
+[ext_resource type="Script" uid="uid://rgjtv3cuh83s" path="res://unstore/script/random_try/udp__integer_key_to_parent_udp_push.gd" id="3_ioo8u"]
+[ext_resource type="Texture2D" uid="uid://s48q6v4qopo4" path="res://unstore/asset/2d/xbox_button/AU.PNG" id="4_84cnc"]
+[ext_resource type="Texture2D" uid="uid://nfegug8hwhfn" path="res://unstore/asset/2d/xbox_button/AR.PNG" id="5_ujm2q"]
+[ext_resource type="Texture2D" uid="uid://pbux5nhga1qx" path="res://unstore/asset/2d/xbox_button/AL.PNG" id="6_irhpy"]
+[ext_resource type="Texture2D" uid="uid://cv1l6xgo3i676" path="res://unstore/asset/2d/xbox_button/BY.PNG" id="7_k0ejt"]
+[ext_resource type="Texture2D" uid="uid://ce1gpgjiv7sbo" path="res://unstore/asset/2d/xbox_button/BX.PNG" id="8_fwx3q"]
+[ext_resource type="Texture2D" uid="uid://raaoo6ht2re8" path="res://unstore/asset/2d/xbox_button/BB.PNG" id="9_dj8qd"]
+
+[node name="HelloWorldNodeScene" type="Node"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Node" type="Node" parent="CanvasLayer"]
+script = ExtResource("3_avd86")
+target_ip = "193.150.14.47"
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Node"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 12.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 6
+
+[node name="Button AD" type="Button" parent="CanvasLayer/Node/GridContainer"]
+layout_mode = 2
+icon = ExtResource("2_hofel")
+script = ExtResource("3_ioo8u")
+parent_node_path = NodePath("../..")
+press_integer = 1315
+release_integer = 2315
+
+[node name="Button AU" type="Button" parent="CanvasLayer/Node/GridContainer"]
+layout_mode = 2
+icon = ExtResource("4_84cnc")
+script = ExtResource("3_ioo8u")
+parent_node_path = NodePath("../..")
+press_integer = 1311
+release_integer = 2311
+
+[node name="Button AR" type="Button" parent="CanvasLayer/Node/GridContainer"]
+layout_mode = 2
+icon = ExtResource("5_ujm2q")
+script = ExtResource("3_ioo8u")
+parent_node_path = NodePath("../..")
+press_integer = 1313
+release_integer = 2313
+
+[node name="Button AL" type="Button" parent="CanvasLayer/Node/GridContainer"]
+layout_mode = 2
+icon = ExtResource("6_irhpy")
+script = ExtResource("3_ioo8u")
+parent_node_path = NodePath("../..")
+press_integer = 1317
+release_integer = 2317
+
+[node name="Button Y" type="Button" parent="CanvasLayer/Node/GridContainer"]
+layout_mode = 2
+icon = ExtResource("7_k0ejt")
+script = ExtResource("3_ioo8u")
+parent_node_path = NodePath("../..")
+press_integer = 1303
+release_integer = 2303
+
+[node name="Button X" type="Button" parent="CanvasLayer/Node/GridContainer"]
+layout_mode = 2
+icon = ExtResource("8_fwx3q")
+script = ExtResource("3_ioo8u")
+parent_node_path = NodePath("../..")
+press_integer = 1301
+release_integer = 2301
+
+[node name="Button B" type="Button" parent="CanvasLayer/Node/GridContainer"]
+layout_mode = 2
+icon = ExtResource("9_dj8qd")
+script = ExtResource("3_ioo8u")
+parent_node_path = NodePath("../..")
+press_integer = 1302
+release_integer = 2302
+
+[node name="Button A" type="Button" parent="CanvasLayer/Node/GridContainer"]
+layout_mode = 2
+icon = ExtResource("1_pq0jg")
+script = ExtResource("3_ioo8u")
+parent_node_path = NodePath("../..")
