@@ -11,9 +11,15 @@ config_version=5
 [application]
 
 config/name="HelloSilksong"
-run/main_scene="uid://c1wg05hfofber"
+run/main_scene="uid://bdemwfs6jql1q"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=512
+window/size/viewport_height=512
+window/size/borderless=true
 
 [rendering]
 
