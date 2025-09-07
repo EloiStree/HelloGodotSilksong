@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3oirvrk4mkf1"]
+
+[ext_resource type="Script" uid="uid://by7x78fn6qo76" path="res://unstore/script/webcam/webcam_to_sprite2D.gd" id="1_q5dka"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("1_q5dka")
