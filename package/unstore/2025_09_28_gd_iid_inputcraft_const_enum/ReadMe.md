@@ -1,0 +1,3 @@
+Enum, class and const value to be used in IID application that want to simulate input following the ScratchToInputcraft convention.
+
+Previously called ScratchToWarcraft this package aim to provide an abstract way to request input action: keybaord, gamepad ...
