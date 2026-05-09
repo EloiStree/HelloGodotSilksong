@@ -1,13 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://bdemwfs6jql1q"]
+[gd_scene load_steps=6 format=3 uid="uid://bdemwfs6jql1q"]
 
 [ext_resource type="Script" uid="uid://nlnr21ifclcc" path="res://unstore/script/webcam/webcam_to_cube.gd" id="1_g45wh"]
 [ext_resource type="Script" uid="uid://dp2n1q3a87rl4" path="res://unstore/script/webcam/display_webcam_list.gd" id="2_kav6q"]
+[ext_resource type="Texture2D" uid="uid://hnri5jsds78i" path="res://unstore/asset/2d/xbox_button/AC.PNG" id="2_yuw3d"]
+[ext_resource type="Script" uid="uid://by7x78fn6qo76" path="res://unstore/script/webcam/webcam_to_sprite2D.gd" id="3_sqqsy"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_g45wh"]
 
 [node name="HelloWebcam" type="Node2D"]
 
 [node name="Node Test Webcam" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node Test Webcam"]
+position = Vector2(137, 75)
+texture = ExtResource("2_yuw3d")
+script = ExtResource("3_sqqsy")
 
 [node name="Node3D" type="Node3D" parent="Node Test Webcam"]
 transform = Transform3D(0.454996, 0, 0, 0, 0.454996, 0, 0, 0, 0.454996, 0, 0, 0.190973)
