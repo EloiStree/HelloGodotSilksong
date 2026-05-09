@@ -1,6 +1,7 @@
 extends Node
 
 func _ready():
+	
 	var count = CameraServer.get_feed_count()
 	if count == 0:
 		print("No webcams detected")
